@@ -19,3 +19,11 @@ echo "YAY! Your password contains a number"
 else 
 echo "Your password must contain at least one of the following characters: @ # $ % & * - + ="
 fi
+
+#Does the password contain a numeric value?
+if echo "${password}" | grep '[0-9]' >/dev/null; then
+echo "YAY! Your password contains a number"
+
+else
+echo "Your password doesn't contain a number"
+fi

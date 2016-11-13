@@ -28,3 +28,16 @@ else
 echo "Your password doesn't contain a number"
 Strength=$((${Strength}-1))
 fi
+
+#if password doesn't satisfy the condition 1 is taken away from strength counter. 
+#Counter starts at 3 and depending on the number of the counter will indicate the password strength
+
+if ((${Strength}==1 )) ; then
+echo "Password is WEAK";
+elif ((${Strength}==2 )) ; then
+echo "Password is MODERATE";
+elif ((${Strength}==3 )) ; then
+echo "Password is STRONG";
+else
+echo "Password not good";
+fi 

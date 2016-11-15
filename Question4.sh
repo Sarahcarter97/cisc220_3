@@ -4,6 +4,8 @@
 #Adele McCallum 10093867
 #Katherine DuQuesnay 10138898
 
-#try to sort only the fourth column: the size
-lsblk --noheadings --raw | sort -k4n
-#we only want top 2, which will only be in G, not M
+#try to sort only the fourth column: the size 
+#change size to bytes to avoid confusion between GB and MB
+lsblk --noheadings --raw --bytes | sort -k4 -n | head -2
+#we only want top 2 can be doone by using head command
+

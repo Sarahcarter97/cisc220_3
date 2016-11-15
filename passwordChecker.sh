@@ -1,5 +1,7 @@
 #!/bin/bash
-
+#Question 3 Assignment 3
+#Cisc 220
+#
 read -p "Please enter a password:" -s password
 LEN=${#password};
 Strength=$((3))

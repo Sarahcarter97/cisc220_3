@@ -4,8 +4,8 @@
 #Adele McCallum 10093867
 #Katherine DuQuesnay 10138898
 
-#try to sort only the fourth column: the size 
+#try to sort only the fourth column: the size after using grep to find all partions 
 #change size to bytes to avoid confusion between GB and MB
-lsblk --noheadings --raw --bytes | sort -k4 -n | head -2
+lsblk --noheadings --raw --bytes | grep -e part | sort -k4 -n | head -2
 #we only want top 2 can be doone by using head command
 

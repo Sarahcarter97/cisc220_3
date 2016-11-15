@@ -1,7 +1,12 @@
 #!/bin/bash
 #Question 3 Assignment 3
 #Cisc 220
-#
+#Displays whether a password is weak, moderate or strong based on three conditionals.
+#Dean Wilkins-Reeves 10176758
+#Sarah Carter-Anderson 10193595
+#Adele McCallum 10093867
+#Katherine DuQuesnay 10138898
+
 read -p "Please enter a password:" -s password
 LEN=${#password};
 Strength=$((3))
